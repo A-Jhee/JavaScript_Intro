@@ -1,9 +1,8 @@
-const NAME = 'Victor';
-console.log('Good Morning, ' + NAME);
-console.log('Good Afternoon, ' + NAME);
-console.log('Good Evening, ' + NAME);
+let rlSync = require('readline-sync');
+function askName() {
+  let firstName = rlSync.question("What is your first name?\n");
+  let lastName = rlSync.question("What is your last name?\n");
+  return firstName + ' ' + lastName
+}
 
-NAME = 'Joe';
-console.log('Good Morning, ' + NAME);
-console.log('Good Afternoon, ' + NAME);
-console.log('Good Evening, ' + NAME);
+console.log(`Welcome to the net. The game as begun, ${askName()}.`)
