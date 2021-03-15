@@ -1,9 +1,15 @@
-let obj = {
-  foo: { a: "hello", b: "world" },
-  bar: ["example", "mem", null, { xyz: 6 }, 88],
-  qux: [4, 8, 12]
-};
+function allMatches(words, regex) {
+  return words.filter((word) => regex.test(word));
+}
 
-obj.bar[3].xyz = 606;
+let words = [
+  'laboratory',
+  'experiment',
+  'flab',
+  'Pans Labyrinth',
+  'elaborate',
+  'polar bear',
+];
 
-console.log(obj.bar);
+console.log(allMatches(words, /lab/)); // => ['laboratory', 'flab', 'elaborate']
+
