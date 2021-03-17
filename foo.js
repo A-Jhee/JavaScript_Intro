@@ -12,4 +12,3 @@ let words = [
 ];
 
 console.log(allMatches(words, /lab/)); // => ['laboratory', 'flab', 'elaborate']
-
