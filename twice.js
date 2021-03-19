@@ -27,4 +27,4 @@ console.log(twice(7676) == 7676);
 console.log(twice(1234567812345678) == 1234567812345678);
 console.log(twice(5) == 10);
 
-// console.log(isDouble(1234567812345678));
+// console.log(isDouble(123456789123456789));
