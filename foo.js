@@ -1,14 +1,12 @@
-function allMatches(words, regex) {
-  return words.filter((word) => regex.test(word));
-}
+// function logMultiples(num) {
+//   let maxFactor = Math.floor(100 / num)
+//   for (; maxFactor > 0; maxFactor -= 1) {
+//     let newMultiple = maxFactor * num
+//     if (newMultiple % 2 === 1) console.log(newMultiple);
+//   }
+// }
 
-let words = [
-  'laboratory',
-  'experiment',
-  'flab',
-  'Pans Labyrinth',
-  'elaborate',
-  'polar bear',
-];
+// logMultiples(17);
 
-console.log(allMatches(words, /lab/)); // => ['laboratory', 'flab', 'elaborate']
+let name = prompt("What is your dog's name?");
+console.log(name);
