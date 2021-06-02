@@ -1,12 +1,12 @@
-// function logMultiples(num) {
-//   let maxFactor = Math.floor(100 / num)
-//   for (; maxFactor > 0; maxFactor -= 1) {
-//     let newMultiple = maxFactor * num
-//     if (newMultiple % 2 === 1) console.log(newMultiple);
-//   }
-// }
+function oddities(array) {
+  const oddElements = [];
 
-// logMultiples(17);
+  for (let i = 0; i < array.length; i += 2) {
+    oddElements.push(array[i]);
+  }
 
-let name = prompt("What is your dog's name?");
-console.log(name);
+  return oddElements;
+}
+
+console.log(oddities([2, 3, 4, 5, 6]));      // false
+console.log(oddities(['abc', 'def']));         // false
